@@ -19,7 +19,7 @@ class CreateTravelsTable extends Migration
             $table->string('city', 20);
             $table->string('country', 20);
             $table->decimal('costo',7,2);
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->date('partenza');
             $table->date('ritorno');
 
